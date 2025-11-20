@@ -1,0 +1,9 @@
+
+# folders
+venv
+__pycache__
+download
+
+# files
+*.zip
+
