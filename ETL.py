@@ -4,7 +4,7 @@ from Extract_datatran import extract_datatran
 from Transform_acidentes import transform_acidentes
 from Transform_datatran import transform_datatran
 
-# from Transform_acidentes import load_acidentes
+from Load_acidentes import load_acidentes
 from Load_datatran import load_datatran
 
 
@@ -20,5 +20,5 @@ transform_datatran()
 
 
 print("Carregando dados...")
-# 
+load_acidentes()
 load_datatran()

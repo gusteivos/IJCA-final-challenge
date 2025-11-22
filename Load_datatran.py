@@ -5,13 +5,13 @@ import sqlite3
 
 
 def load_datatran():
-    df_acidentes = pd.read_csv("medallion/silver/datatran.csv")
+    df_datatran = pd.read_csv("medallion/silver/datatran.csv")
 
-    con_acidentes = sqlite3.connect("medallion/gold/datatran.sqlite")
+    con_datatran = sqlite3.connect("medallion/gold/datatran.sqlite")
 
-    df_acidentes.to_sql("datatran", con_acidentes, if_exists="replace", index=False)
+    df_datatran.to_sql("datatran", con_datatran, if_exists="replace", index=False)
 
-    con_acidentes.close()
+    con_datatran.close()
 
 
 
