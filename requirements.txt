@@ -5,3 +5,6 @@ pandas
 pandasgui
 
 # sqlite3
+
+google-adk
+google-generativeai
